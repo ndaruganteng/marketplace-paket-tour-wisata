@@ -12,9 +12,6 @@
                 <a href="{{ route('tour.index') }}" class="mr-4 hover:underline md:mr-6">Tour</a>
             </li>
             <li>
-                <a href="{{ route('blog.index') }}" class="mr-4 hover:underline md:mr-6 ">Blog</a>
-            </li>
-            <li>
                 <a href="{{ route('contact.index') }}"  class="hover:underline">Contact</a>
             </li>
         </ul>

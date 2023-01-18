@@ -15,151 +15,193 @@
             href="images/icon/iconbg.png"
         />
 </head>
-<body>
+  <body class="bg-white">
+
+
+    <!-- <section class="text-gray-600 body-font overflow-hidden">
+      <div class="container px-5 py-16 mx-auto">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+          <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="images/background/paket.jpg">
+          <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <h2 class="text-sm title-font text-gray-500 tracking-widest">Wisata Alam</h2>
+            <h1 class="text-gray-900 text-3xl title-font font-medium mb-2">Open Trip Tour Wisata Beautiful of Labuan Bajo - 4D3N</h1>
+            <p class="leading-relaxed my-4"> <span class="font-bold">Highlight </span> : Sailling Pulau Kelor, Pulau Manjarite, Pulau Kalong, Explore pulau Padar, Snorkelling Pulau Sebayur</p>
+            <span class="text-2xl font-bold text-yellow-600 ">IDR 8.250.000</span>
+            <div class="relative overflow-x-auto">
+              <table class="w-full text-sm text-left text-gray-700 dark:text-gray-400">
+                  <tbody>
+                      <tr class="  dark:bg-gray-800 dark:border-gray-700">
+                          <th scope="row" class=" py-4 font-medium text-gray-900 text-lg dark:text-white">
+                              Kuota
+                          </th>
+                          <td class=" py-4 text-lg">
+                              45 orang
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          <div class="relative mb-4">
+            <input type="number" id="visitors" placeholder="jumlah orang" class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+          </div>           
+            <div class="flex mt-5">
+              <button class="text-white bg-black border-0 py-2 px-8 focus:outline-none rounded text-lg">Pesan sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <section class="text-gray-600 font-inter">
-        <div class="container mx-auto flex px-24 pt-24 pb-6 items-center justify-center flex-col">
+        <div class="container mx-auto flex px-24 py-10 items-center justify-center flex-col">
             <img class="lg:w-2/9 md:w-3/6 w-5/6 mb-12 object-cover object-center " alt="hero" src="images/background/paket.jpg">
-            <div class="text-center lg:w-2/3 w-full">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Open Trip Tour Wisata Beautiful of Labuan Bajo</h1>
-                <p class="mb-8 leading-relaxed">Highlight : Sailling Pulau Kelor, Pulau Manjarite, Pulau Kalong, Explore pulau Padar, Snorkelling Pulau Sebayur</p>
-            </div>
         </div>
-    </section>
+    </section> 
 
-    <section class="font-inter" >
-        <div class="container px-40 pb-20 mx-auto ">      
-            <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                <h2 id="accordion-flush-heading-1">
-                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                    <span>TOUR PRICE</span>
-                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </h2>
-                <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                    <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">    
+    <section class="text-gray-600 body-font">
+      <div class="container px-24 pb-24 mx-auto flex flex-wrap items-center">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 bg-white mt-6 lg:mt-0">
+              <h1 class="text-gray-900 text-3xl title-font font-medium mb-2">Open Trip Tour Wisata Beautiful of Labuan Bajo - 4D3N</h1>
+              <p class="leading-relaxed my-4"> <span class="font-bold">Highlight </span> : Sailling Pulau Kelor, Pulau Manjarite, Pulau Kalong, Explore pulau Padar, Snorkelling Pulau Sebayur</p>          
+              <div class="mb-4 border-b border-white dark:border-gray-700">
+                  <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                      <li class="mr-2" role="presentation">
+                          <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Tour Price</button>
+                      </li>
+                      <li class="mr-2" role="presentation">
+                          <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Include & Exclude</button>
+                      </li>
+                  </ul>
+              </div>
+              <div id="myTabContent">
+                  <div class="hidden p-4 rounded-lg bg-white dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">                   
                     <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
                         <li>
-                            List item one
+                          Harga Paket Tour :
                             <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside">
-                                <li>You might feel like you are being really "organized" o</li>
-                                <li>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</li>
-                                <li>Nesting tons of folders in your source code is also not helpful.</li>
+                                <li>Rp. 8.800.000 per pax</li>
+                                <li>Harga berlaku untuk minimal 10 orang</li>
                             </ol>
                         </li>
                         <li>
-                            List item two
+                        Syarat & Ketentuan :
                             <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
-                                <li>I'm not sure if we'll bother styling more than two levels deep.</li>
-                                <li>Two is already too much, three is guaranteed to be a bad idea.</li>
-                                <li>If you nest four levels deep you belong in prison.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            List item three
-                            <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
-                                <li>Again please don't nest lists if you want</li>
-                                <li>Nobody wants to look at this.</li>
-                                <li>I'm upset that we even have to bother styling this.</li>
+                                <li>Harga Berdasarkan peserta 10 orang dewasa</li>
+                                <li>Pelunasan paling lambat 14 hari sebelum tanggal keberangkatan.</li>
                             </ul>
                         </li>
                     </ul>
-                    </div>
-                </div>
-                <h2 id="accordion-flush-heading-2">
-                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                    <span>INCLUDE & EXCLUDE</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </h2>
-                <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                    <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">       
-                        <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2>
-                        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                            <li>
-                                At least 10 characters (and up to 100 characters)
-                            </li>
-                            <li>
-                                At least one lowercase character
-                            </li>
-                            <li>
-                                Inclusion of at least one special character, e.g., ! @ # ?
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h2 id="accordion-flush-heading-3">
-                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-                    <span>ITINERARY</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </h2>
-                <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                    <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-                        
-                    <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2>
-                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                  </div>
+                  <div class="hidden p-4 rounded-lg bg-white dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
                         <li>
-                            At least 10 characters (and up to 100 characters)
+                          INCLUDE :
+                            <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+                                <li>Guide Lokal</li>
+                                <li>Dokumentasi </li>
+                                <li>Makan 3x</li>
+                                <li>Menginap di Phinisi 3D 2N</li>
+
+                            </ol>
                         </li>
                         <li>
-                            At least one lowercase character
-                        </li>
-                        <li>
-                            Inclusion of at least one special character, e.g., ! @ # ?
+                          EXCLUDE :
+                            <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+                                <li>Laundry & Minibar</li>
+                            </ul>
                         </li>
                     </ul>
-                </div>
-            </div>
+                  </div>
+              </div>
         </div>
-    </section>
+        <div class="lg:w-2/6 md:w-1/2 bg-white shadow rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <h2 class="text-gray-900 text-xl mx-auto font-bold title-font mb-5">-Booking-</h2>
+          <div class="relative mb-4">
+            <input type="number" id="visitors" placeholder="jumlah orang" class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+          </div>         
+          <div class="relative overflow-x-auto mb-4">
+              <table class="w-full text-sm text-left text-gray-700 dark:text-gray-400">
+                  <tbody>
+                      <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              Kuota
+                          </th>
+                          <td class="px-6 py-4">
+                              45 orang
+                          </td>
+                      </tr>
+                      <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              Tersisa
+                          </th>
+                          <td class="px-6 py-4">
+                              40 Orang Tersisa
+                          </td>
+                      </tr>
+                      <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              Sub Total
+                          </th>
+                          <td class="px-6 py-4">
+                              1x 8.250.000
+                          </td>
+                      </tr>
+                      <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              Total Bayar
+                          </th>
+                          <td class="px-6 py-4 font-bold text-yellow-700">
+                              IDR 8.250.000
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <a href="{{ route('transaksi.index') }}" class="text-white bg-black border-0 py-2 px-8 focus:outline-none text-center rounded text-lg">Pesan sekarang</a>
+        </div>
+      </div>
+    </section> 
 
     <section class="text-gray-600 body-font">
-        <div class="container px-5 pb-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-10">
-                <h1 class="sm:text-4xl text-3xl font-bold title-font mb-2 text-gray-900">BOOKING TOUR !</h1>
+      <div class="container px-40 pb-10 mx-auto">
+        <div class="flex flex-wrap -mx-4 -my-8">
+          <div class="py-8 px-4 lg:w-1/4">
+            <div class="h-full flex items-start">
+              <div class="flex-grow pl-6">
+                <h1 class="title-font text-xl font-medium text-gray-900 mb-3">DURATION :</h1>
+                <p class="leading-relaxed mb-5">4 DAYS - 3 NIGHTS</p>
+              </div>
             </div>
-            <div class="lg:w-2/3 w-full mx-auto overflow-auto">               
-                <form>
-                    <div class="grid gap-6 mb-6 md:grid-cols-2">
-                        <div>
-                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
-                        </div>
-                        <div>
-                            <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                            <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
-                        </div>
-                        <div>
-                            <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                            <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required>
-                        </div>  
-                        <div>
-                            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                        </div>
-                        <div>
-                            <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-                            <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
-                        </div>
-                        <div>
-                            <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
-                            <input type="number" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
-                        </div>
-                    </div>
-                    <div class="mb-6">                   
-                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
-                    </div> 
-                    <button type="submit" class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-                </form>
+          </div>
+          <div class="py-8 px-4 lg:w-1/4">
+            <div class="h-full flex items-start">
+              <div class="flex-grow pl-6">
+                <h1 class="title-font text-xl font-medium text-gray-900 mb-3">KATEGORI</h1>
+                <p class="leading-relaxed mb-5">Wisata Alam</p>
+              </div>
             </div>
+          </div>
+          <div class="py-8 px-4 lg:w-1/4">
+            <div class="h-full flex items-start">
+              <div class="flex-grow pl-6">
+                <h1 class="title-font text-xl font-medium text-gray-900 mb-3">TANGGAL BERANGKAT</h1>
+                <p class="leading-relaxed mb-5">13 FEBRUARI 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8 px-4 lg:w-1/4">
+            <div class="h-full flex items-start">
+              <div class="flex-grow pl-6">
+                <h1 class="title-font text-xl font-medium text-gray-900 mb-3">TANGGAL BERAKHIR</h1>
+                <p class="leading-relaxed mb-5">17 FEBRUARI 2023</p>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </section>
+      </div>
+    </section>  
 
-
-
-
-</body>
+  </body>
 </html>
 @endsection

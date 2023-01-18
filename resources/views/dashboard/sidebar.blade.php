@@ -31,14 +31,6 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('updateblog.index') }}" class="nav-link">          
-                  <i class="nav-icon fa-solid fa-newspaper"></i>
-                  <p>
-                    Blog
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="{{ route('user.index') }}" class="nav-link">          
                   <i class="nav-icon fa-solid fa-users-gear"></i>
                   <p>

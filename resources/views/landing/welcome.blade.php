@@ -13,7 +13,7 @@
             @vite('resources/css/app.css')
             @vite('resources/js/app.js')
     </head>
-    <body >
+    <body class="" >
 
         <!-- Navbar -->
         <nav class="bg-white lg:px-24 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 shadow border-gray-200 dark:border-gray-600 font-inter">
@@ -53,9 +53,7 @@
                     <li>
                         <a href="{{ route('tour.index') }}" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tour</a>
                     </li>
-                    <li>
-                        <a href="{{ route('blog.index') }}" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-prgray-600imary md:hover:bg-transparent md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
-                    </li>
+                
                     <li>
                         <a href="{{ route('contact.index') }}" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                     </li>
@@ -93,7 +91,7 @@
 
         <!-- hero -->
         <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-24 py-24 md:flex-row flex-col items-center">
+            <div class="container mx-auto flex px-24 py-24  md:flex-row flex-col items-center">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 class="title-font sm:text-4xl xl:text-7xl mb-8 font-bold text-gray-900">Explore A New <br class="hidden lg:inline-block">World.
                     </h1>
@@ -103,125 +101,59 @@
                     </a>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img class="object-cover object-center rounded" alt="hero" src="images/dashboard/background.png">
+                    <img class="object-cover object-center rounded" alt="hero" src="images/home/background.png">
                 </div>
             </div>
         </section>
         <!-- hero -->
 
-        <!-- card 2 -->
-        <section class="text-gray-600 font-inter">
+        <!-- kategori -->
+        <section class="text-gray-600 body-font">
             <div class="container px-24 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4 text-center ">
-
-                    <div class="p-4 md:w-1/3 sm:w-1/1 w-full ">
-                        <div class=" px-4 py-6 rounded-lg shadow bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-36 h-36 inline-block" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M15 16h3q.425 0 .712-.288Q19 15.425 19 15V9q0-.425-.288-.713Q18.425 8 18 8h-3q-.425 0-.712.287Q14 8.575 14 9v6q0 .425.288.712q.287.288.712.288Zm1-2v-4h1v4Zm-7 2h3q.425 0 .713-.288Q13 15.425 13 15V9q0-.425-.287-.713Q12.425 8 12 8H9q-.425 0-.712.287Q8 8.575 8 9v6q0 .425.288.712Q8.575 16 9 16Zm1-2v-4h1v4Zm-5 2h2V8H5Zm-3 4V4h20v16Z"/></svg>
-                        <h2 class="title-font font-semibold text-xl mb-3 text-gray-900">Harga Tour Kompetitif</h2>
-                            <p class="leading-relaxed text-gray-400">Lorem Ipsum is simply dummy text of 
-                                the printing and typesetting.</p>
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 lg:w-1/3 md:w-1/1">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" class="flex-shrink-0 rounded-full w-full h-56 object-cover object-center mb-4" src="images/background/bromo.jpg">
+                            <div class="w-full">
+                                <a href=""> 
+                                    <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Alam</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-4 md:w-1/3 sm:w-1/1 w-full ">
-                        <div class=" px-4 py-6 rounded-lg shadow bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-36 h-36 inline-block" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M12 20c-4.4 0-8-3.6-8-8s3.6-8 8-8s8 3.6 8 8s-3.6 8-8 8m0-18C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m-1 12h2v3h3v-5h2l-6-5l-6 5h2v5h3v-3"/></svg>
-                            <h2 class="title-font font-semibold text-xl mb-3 text-gray-900">Agen Resmi</h2>
-                            <p class="leading-relaxed text-gray-400">Lorem Ipsum is simply dummy text of 
-                                the printing and typesetting.</p>
+                    <div class="p-4 lg:w-1/3 md:w-1/1">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" class="flex-shrink-0 rounded-full w-full h-56 object-cover object-center mb-4" src="images/background/borobudur.jpg">
+                            <div class="w-full">
+                                <a href=""> 
+                                    <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Sejarah</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-4 md:w-1/3 sm:w-1/1 w-full ">
-                        <div class=" px-4 py-6 rounded-lg shadow bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-36 h-36 inline-block" width="1em" height="1em" viewBox="0 0 16 16"><path fill="black" d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59c-.125.36-.479 1.013-1.04 1.639c-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545c1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484c.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464c.201-.263.38-.578.488-.901c.11-.33.172-.762.004-1.149c.069-.13.12-.269.159-.403c.077-.27.113-.568.113-.857c0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362a1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272c-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05a9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164c-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868c-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65c1.095-.3 1.977-.996 2.614-1.708c.635-.71 1.064-1.475 1.238-1.978c.243-.7.407-1.768.482-2.85c.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725a.5.5 0 0 0 .595.644l.003-.001l.014-.003l.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164c.175.058.45.3.57.65c.107.308.087.67-.266 1.022l-.353.353l.353.354c.043.043.105.141.154.315c.048.167.075.37.075.581c0 .212-.027.414-.075.582c-.05.174-.111.272-.154.315l-.353.353l.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353l.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/></svg>
-                            <h2 class="title-font font-semibold text-xl mb-3 text-gray-900">Terpercaya</h2>
-                            <p class="leading-relaxed text-gray-400">Lorem Ipsum is simply dummy text of 
-                                the printing and typesetting.</p>
+                    <div class="p-4 lg:w-1/3 md:w-1/1">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" class="flex-shrink-0 rounded-full w-full h-56 object-cover object-center mb-4" src="images/background/demak.jpg">
+                            <div class="w-full">
+                                <a href=""> 
+                                    <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Religi</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class=""></div>
         </section>
-        <!-- card 2 -->
-
-        <!-- xxxx -->
-        <!-- <section class="text-gray-600 body-font">
-            <div class="container px-24 pt-10 pb-16 mx-auto">
-            <div class="container mx-auto flex flex-col px-5 ustify-center items-center">
-                        <div class="w-full md:w-2/3 flex flex-col mb-10 items-center text-center">
-                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">PAKET TOUR INDONESIA</h1>
-                            <p class="mb-4 leading-relaxed  text-gray-400">TOUR DOMESTIK</p>
-                        </div>
-                    </div>
-                <div class="flex flex-wrap -m-2 mx-auto">
-                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center bg-white p-4 rounded-lg">
-                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/background/bali.jpg">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
-                                <p class="text-gray-500">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center bg-white p-4 rounded-lg">
-                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
-                                <p class="text-gray-500">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center bg-white p-4 rounded-lg">
-                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
-                                <p class="text-gray-500">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center bg-white p-4 rounded-lg">
-                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
-                                <p class="text-gray-500">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center bg-white p-4 rounded-lg">
-                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
-                                <p class="text-gray-500">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center bg-white p-4 rounded-lg">
-                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
-                                <p class="text-gray-500">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- xxxx -->
+        <!-- kategori -->
 
         <!-- Card -->
         <section class="font-inter" >
-            <div class="container px-24 pb-10 pt-6 mx-auto">
+            <div class="container px-24 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-10">
                     <div class="container mx-auto flex flex-col px-5 ustify-center items-center">
                         <div class="w-full md:w-2/3 flex flex-col mb-10 items-center text-center">
-                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">PAKET TOUR INDONESIA</h1>
-                            <p class="mb-4 leading-relaxed  text-gray-400">TOUR DOMESTIK</p>
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">PAKET TOUR TERBARU</h1>
                         </div>
                     </div>
                     <div class="flex flex-wrap -m-4 font-inter">
@@ -242,7 +174,10 @@
                                         </span>4 Hari - 3 Malam
                                     </p>
                                     <p class="mb-2 font-normal text-gray-400 dark:text-gray-400">Start From</p>
-                                    <span class="text-lg font-bold text-yellow-600 ">IDR 1.000.000</span>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-lg font-bold text-yellow-600 ">IDR 8.250.000</span>
+                                        <span class="text-base font-medium text-gray\ ">*Raja holiday</span>                                      
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +198,10 @@
                                         </span>4 Hari - 3 Malam
                                     </p>
                                     <p class="mb-2 font-normal text-gray-400 dark:text-gray-400">Start From</p>
-                                    <span class="text-lg font-bold text-yellow-600 ">IDR 1.000.000</span>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-lg font-bold text-yellow-600 ">IDR 8.250.000</span>
+                                        <span class="text-base font-medium text-gray\ ">*Raja holiday</span>                                      
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -284,7 +222,10 @@
                                         </span>4 Hari - 3 Malam
                                     </p>
                                     <p class="mb-2 font-normal text-gray-400 dark:text-gray-400">Start From</p>
-                                    <span class="text-lg font-bold text-yellow-600 ">IDR 1.000.000</span>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-lg font-bold text-yellow-600 ">IDR 8.250.000</span>
+                                        <span class="text-base font-medium text-gray\ ">*Raja holiday</span>                                      
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +246,10 @@
                                         </span>4 Hari - 3 Malam
                                     </p>
                                     <p class="mb-2 font-normal text-gray-400 dark:text-gray-400">Start From</p>
-                                    <span class="text-lg font-bold text-yellow-600 ">IDR 1.000.000</span>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-lg font-bold text-yellow-600 ">IDR 8.250.000</span>
+                                        <span class="text-base font-medium text-gray\ ">*Raja holiday</span>                                      
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -404,6 +348,9 @@
         <!-- Card -->
 
 
+       
+
+
 
         <!-- footer -->
         <footer class="p-4 bg-white rounded-lg shadow md:px-6 lg:px-24  md:py-8 dark:bg-gray-900">
@@ -418,9 +365,6 @@
                     </li>
                     <li>
                         <a href="{{ route('tour.index') }}" class="mr-4 hover:underline md:mr-6">Tour</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('blog.index') }}" class="mr-4 hover:underline md:mr-6 ">Blog</a>
                     </li>
                     <li>
                         <a href="{{ route('contact.index') }}"  class="hover:underline">Contact</a>
