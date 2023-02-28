@@ -16,19 +16,18 @@
     <body class="" >
 
         <!-- Navbar -->
-        <nav class="bg-white lg:px-24 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 shadow border-gray-200 dark:border-gray-600 font-inter">
+        <!-- <nav class="bg-white lg:px-24 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 shadow border-gray-200 dark:border-gray-600 font-inter">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="{{ route('home.index') }}" class="flex items-center">
                 <img src="images/icon/iconbg.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                 <span class="self-center text-black text-2xl font-bold whitespace-nowrap dark:text-white">Thelema</span>
             </a>
             <div class="flex md:order-2">
-                  <a href="{{ route('login.index') }}" class="text-gray-900 bg-transparent border border-gray-900 hover:bg-gray-900 hover:text-white font-medium rounded-2xl text-sm px-5 py-2 text-center mr-3 md:mr-0 ">Sign in</a>
-                <!-- Dropdown menu -->
+                <a href="{{ route('login.index') }}" class="text-gray-900 bg-transparent border border-gray-900 hover:bg-gray-900 hover:text-white font-medium rounded-2xl text-sm px-5 py-2 text-center mr-3 md:mr-0 ">Sign in</a>
                 <div id="userDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
                         <div>Username</div>
-                    <div class="font-medium truncate">name@gmail.com</div>
+                        <div class="font-medium truncate">name@gmail.com</div>
                     </div>
                     <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
                         <li>
@@ -36,7 +35,7 @@
                         </li>
                     </ul>
                     <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-600 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-600 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                     </div>
                 </div>
 
@@ -46,7 +45,7 @@
                 </button>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex  flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul class="flex flex-col lg:text-lg p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="{{ route('home.index') }}" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
                     </li>
@@ -60,8 +59,40 @@
                 </ul>
             </div>
             </div>  
-        </nav>
+        </nav> -->
         <!-- Navbar -->
+
+        
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+                <a href="{{ route('home.index') }}" class="flex items-center">
+                    <img src="images/icon/iconbg.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white">THELEMA</span>
+                </a>
+                <div class="flex items-center">
+                    <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">Daftar Mitra</a>
+                    <a href="{{ route('login.index') }}" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                </div>
+            </div>
+        </nav>
+        <nav class="bg-gray-50 dark:bg-gray-700">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+                <div class="flex items-center">
+                    <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+                        <li>
+                            <a href="{{ route('home.index') }}" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('tour.index') }}" class="text-gray-900 dark:text-white hover:underline">Daftar Wisata</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('contact.index') }}" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
 
         <!-- Jumbotron -->
         <!-- <div  class=" p-12 text-center relative overflow-hidden bg-no-repeat bg-cover "
@@ -109,11 +140,11 @@
 
         <!-- kategori -->
         <section class="text-gray-600 body-font">
-            <div class="container px-24 py-24 mx-auto">
+            <div class="container px-24 pb-10 mx-auto">
                 <div class="flex flex-wrap -m-4">
                     <div class="p-4 lg:w-1/3 md:w-1/1">
                         <div class="h-full flex flex-col items-center text-center">
-                            <img alt="team" class="flex-shrink-0 rounded-full w-full h-56 object-cover object-center mb-4" src="images/background/bromo.jpg">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/background/bromo.jpg">
                             <div class="w-full">
                                 <a href=""> 
                                     <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Alam</p>
@@ -123,7 +154,7 @@
                     </div>
                     <div class="p-4 lg:w-1/3 md:w-1/1">
                         <div class="h-full flex flex-col items-center text-center">
-                            <img alt="team" class="flex-shrink-0 rounded-full w-full h-56 object-cover object-center mb-4" src="images/background/borobudur.jpg">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/background/borobudur.jpg">
                             <div class="w-full">
                                 <a href=""> 
                                     <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Sejarah</p>
@@ -133,7 +164,7 @@
                     </div>
                     <div class="p-4 lg:w-1/3 md:w-1/1">
                         <div class="h-full flex flex-col items-center text-center">
-                            <img alt="team" class="flex-shrink-0 rounded-full w-full h-56 object-cover object-center mb-4" src="images/background/demak.jpg">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/background/demak.jpg">
                             <div class="w-full">
                                 <a href=""> 
                                     <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Religi</p>

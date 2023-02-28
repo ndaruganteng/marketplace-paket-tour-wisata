@@ -157,7 +157,7 @@
                   </tbody>
               </table>
           </div>
-          <a href="{{ route('transaksi.index') }}" class="text-white bg-black border-0 py-2 px-8 focus:outline-none text-center rounded text-lg">Pesan sekarang</a>
+          <a href="{{ route('detail-transaksi.index') }}" class="text-white bg-black border-0 py-2 px-8 focus:outline-none text-center rounded text-lg">Pesan sekarang</a>
         </div>
       </div>
     </section> 

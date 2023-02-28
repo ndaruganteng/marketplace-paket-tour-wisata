@@ -29,7 +29,6 @@
                   <input type="email" name="email" placeholder="Email" :value="old('email')"  required="" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none focus:border-primary focus:ring-2 focus:ring-primary"/>
                   <input type="text" name="phone" placeholder="Phone" :value="old('phone')" required="" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none focus:border-primary focus:ring-2 focus:ring-primary"/>
                   <input type="text" name="address" placeholder="Address" :value="old('address')" required="" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none focus:border-primary focus:ring-2 focus:ring-primary"/>
-                  <input type="text" name="role" required=""  placeholder="Role" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none focus:border-primary focus:ring-2 focus:ring-primary" />
                   <input type="password" name="password" placeholder="password" required="" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none focus:border-primary focus:ring-2 focus:ring-primary" />
                 </div>
                 <div class="text-center mt-6">

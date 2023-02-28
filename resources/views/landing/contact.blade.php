@@ -18,7 +18,7 @@
 <body>
 
     <section class="text-gray-600 body-font">
-        <div class="container px-40 pb-24 pt-40 mx-auto">
+        <div class="container px-40 pb-10 pt-20 mx-auto">
             <div class="flex flex-col text-center w-full mb-10">
                 <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">CONTACT US</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">From a team of passionate creators working side-by-side with our partners to
@@ -66,7 +66,7 @@
     </section>
 
     <section class="text-gray-600 body-font relative">
-        <div class="container px-40 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div class="container px-40 pt-10 pb-24 mx-auto flex sm:flex-nowrap flex-wrap">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                 <img class="object-cover object-center rounded" alt="hero" src="images/contact/background.png">
             </div>
@@ -80,7 +80,7 @@
                 <div class="relative mb-4">
                 <textarea id="message" name="message" placeholder="Pesan" class="w-full bg-white rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
-                <button class="text-white bg-primary border-0 py-2 px-6 focus:outline-none  rounded-lg text-lg">Kirim</button>
+                <button class="text-white bg-black border-0 py-2 px-6 focus:outline-none  rounded-lg text-lg">Kirim</button>
             </div>
         </div>
     </section>
