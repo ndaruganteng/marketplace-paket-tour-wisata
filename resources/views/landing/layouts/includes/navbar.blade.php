@@ -37,18 +37,18 @@
                 </div>
             </div>
         </nav>
-        <nav class="bg-gray-50 dark:bg-gray-700">
+        <nav class="bg-yellow-500 dark:bg-gray-700">
             <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
                 <div class="flex items-center">
                     <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
                         <li>
-                            <a href="{{ route('home.index') }}" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                            <a href="{{ route('home.index') }}" class="text-white dark:text-white hover:underline" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="{{ route('tour.index') }}" class="text-gray-900 dark:text-white hover:underline">Tour</a>
+                            <a href="{{ route('tour.index') }}" class="text-white dark:text-white hover:underline">Tour</a>
                         </li>
                         <li>
-                            <a href="{{ route('contact.index') }}" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+                            <a href="{{ route('contact.index') }}" class="text-white dark:text-white hover:underline">Contact</a>
                         </li>
                     </ul>
                 </div>

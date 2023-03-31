@@ -19,43 +19,15 @@
     </head>
     <body class="#">
 
-
-        <!-- Jumbotron -->
-        <!-- <div  class=" p-12 text-center relative overflow-hidden bg-no-repeat bg-cover "
-                style="background-image: url('https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
-                height: 700px;">
-            <div
-                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-                style="background-color: rgba(0, 0, 0, 0.6)" >
-        
-                <div class="flex justify-center items-center h-full">
-                    <div class="text-white">
-                        <h2 class="font-bold xl:text-7xl md:text-7xl sm:text-5xl mb-4">Explore a new world.</h2>
-                        <h4 class="text-gray-400 font-semibold xl:text-xl  mb-6">no matther where in the world you want to go, we can help get your there.</h4>
-                        <a
-                        class="inline-block px-7 py-3 mb-1 border-2 border-gray-200 text-gray-200 font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                        href="{{ route('tour.index') }}"
-                        role="button"
-                        data-mdb-ripple="true"
-                        data-mdb-ripple-color="light"
-                        >Jelajah</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>          -->
-        <!-- Jumbotron -->
-        
-
-                <!-- hero -->
+        <!-- hero -->
         <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-24 pb-24 pt-10  md:flex-row flex-col items-center">
+            <div class="container mx-auto flex px-24 py-10 md:flex-row flex-col items-center">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 class="title-font sm:text-4xl xl:text-7xl mb-8 font-bold text-gray-900">Explore A New <br class="hidden lg:inline-block">World.
+                    <h1 class="title-font sm:text-4xl xl:text-7xl mb-4 font-bold text-gray-900">Explore A New <br class="hidden lg:inline-block">World.
                     </h1>
-                    <p class="mb-8  text-2xl text-gray-400">no matther where in the world you want to go, we can help get your there.</p>
-                    <a href="{{ route('tour.index') }}" class="flex justify-center">
-                        <button class="inline-flex text-white bg-black border-0 py-2 px-6 hover:shadow-lg rounded-lg text-lg">Jelajah</button>
+                    <p class="mb-6 text-2xl text-gray-400">no matther where in the world you want to go, we can help get your there.</p>
+                    <a href="#" class="flex justify-center">
+                        <button class="inline-flex text-white bg-black border-0 py-2 px-10 hover:shadow-lg rounded-lg text-lg">Jelajah</button>
                     </a>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -67,51 +39,44 @@
 
         <!-- kategori -->
         <section class="text-gray-600 body-font">
-            <div class="container px-24 pb-10 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                    <div class="p-4 lg:w-1/3 md:w-1/1">
-                        <div class="h-full flex flex-col items-center text-center">
-                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/background/bromo.jpg">
-                            <div class="w-full">
-                                <a href=""> 
-                                    <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Alam</p>
-                                </a>
+            <div class="container px-24 pt-10 mx-auto ">
+                <div class="flex flex-wrap -m-2 ">
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full   ">
+                        <div class="h-full flex items-center  border-gray-200 border-2 p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/background/bromo.jpg">
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 title-font font-medium">Wisata Alam</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="p-4 lg:w-1/3 md:w-1/1">
-                        <div class="h-full flex flex-col items-center text-center">
-                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/background/borobudur.jpg">
-                            <div class="w-full">
-                                <a href=""> 
-                                    <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Sejarah</p>
-                                </a>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-200 border-2 p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/background/borobudur.jpg">
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 title-font font-medium">Wisata Sejarah</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="p-4 lg:w-1/3 md:w-1/1">
-                        <div class="h-full flex flex-col items-center text-center">
-                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/background/demak.jpg">
-                            <div class="w-full">
-                                <a href=""> 
-                                    <p class="title-font mt-2 font-semibold text-2xl text-gray-900">Wisata Religi</p>
-                                </a>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-200 border-2 p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/background/demak.jpg">
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 title-font font-medium">Wisata Religi</h2>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-        <!-- kategori -->
+        <!-- end kategori -->
 
         <!-- Card -->
         <section class="font-inter" >
-            <div class="container px-24 pb-24 pt-10 mx-auto">
-                <div class="flex flex-wrap w-full mb-10">
+            <div class="container px-24 py-24 mx-auto">
+                <div class="flex flex-wrap w-full mb-10 ">
                     <div class="container mx-auto flex flex-col px-5 ustify-center items-center">
                         <div class="w-full md:w-2/3 flex flex-col mb-10 items-center text-center">
-                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">PAKET TOUR TERBARU</h1>
+                            <h1 class="title-font sm:text-4xl text-3xl  font-semibold text-gray-900">PAKET TOUR TERBARU</h1>
                         </div>
                     </div>
                     <div class="flex flex-wrap -m-4 font-inter">
@@ -211,9 +176,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <a href ="{{ route('tour.index') }}" class="flex mx-auto mt-10 text-gray-900 bg-transparent border border-gray-900 py-2 px-8 focus:outline-none hover:text-white hover:bg-gray-900 rounded-2xl text-lg">Jelajah Lainnya</a>
+                    <a href ="{{ route('tour.index') }}" class="flex mx-auto mt-12 text-gray-900 bg-transparent border border-gray-900 py-2 px-8 focus:outline-none hover:text-white hover:bg-gray-900 rounded-lg text-lg">Jelajah Lainnya</a>
                 </div>
             </div>
         </section>
